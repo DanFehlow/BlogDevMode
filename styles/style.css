@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+
+.container {
+  grid: auto / 100%;
+}
+body {
+  background-color: #f8f8f8;
+}
+.size {
+  width: 373px;
+  height: 213px;
+}
+
+.wrapper,
+.wrapper-post {
+  position: relative;
+  max-width: 100vh;
+  height: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  top: 50px;
+}
+.content-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-container.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000090;
+  opacity: 0;
+  z-index: -1;
+}
+
+.homepage {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.home-feed {
+  position: relative;
+  top: -70px;
+  max-width: 100vh;
+  gap: 71px;
+  display: flex;
+  align-items: center;
+}
+
+.feed {
+  max-width: 100vh;
+  position: relative;
+  display: grid;
+  gap: 71px;
+  grid-template-columns: 1fr 1fr;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 219px;
+  font-weight: 700px;
+  font-size: 40px;
+}
+
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 48px;
+  text-align: center;
+}
+
+#add-button {
+  background-color: rgba(50, 193, 64, 1);
+  color: rgba(255, 254, 254, 1);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  width: 501px;
+  height: 102px;
+  border: none;
+  margin-top: 150px;
+  cursor: pointer;
+  transition: box-shadow 0.6s ease;
+}
+
+#add-button:hover {
+  box-shadow: inset 500px 0 0 #00000055;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-align: left;
+  font-size: 20px;
+}
+
+#text-feed {
+  font-size: 15px;
+  text-align: left;
+  align-items: flex-end;
+}
+
+.title-posts {
+  cursor: pointer;
+}
+
+#one-more-post.active {
+  display: flex;
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  border: none;
+  right: 0;
+  z-index: 1;
+  opacity: 1;
+  background: none;
+  cursor: pointer;
+}
+textarea {
+  height: 10rem;
+}
+
+#one-more-post {
+  display: flex;
+  position: relative;
+  width: 62px;
+  height: 62px;
+  border: none;
+  right: 0;
+  background: none;
+  cursor: pointer;
+  background: #00000090;
+  opacity: 0;
+  z-index: -1;
+}

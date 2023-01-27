@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+    <link rel="stylesheet" href="./styles/post.css" />
+    <script defer src="./scripts/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Montserrat&family=Mukta:wght@800&family=Roboto+Slab&family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blog - Post</title>
+  </head>
+  <body>
+    <main>
+      <div id="block" class="block">
+        <div>
+          <h2 id="title-blog" class="title-blog">Blog DevMode</h2>
+        </div>
+
+        <div id="content" class="content">
+          <div id="buttons" class="buttons">
+            <button id="newbutton" class="newbutton">Novo</button>
+            <button id="editbutton" class="editbutton">Editar</button>
+            <button id="deletebutton" class="deletebutton">Deletar</button>
+          </div>
+
+          <div id="contentpost" class="contentpost"></div>
+
+          <div id="modal-delete" class="modal-delete">
+            <div id="contentmodal" class="contentmodal">
+              <div id="textmodal" class="textmodal">
+                <p>Deseja mesmo deletar esse post</p>
+              </div>
+              <div id="buttonsmodal" class="buttonsmodal">
+                <button id="choice-keep" class="choice-keep">NÃO</button>
+                <button id="choice-delete" class="choice-delete">
+                  DELETAR
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

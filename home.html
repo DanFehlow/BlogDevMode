@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
+    <script defer src="./scripts/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Montserrat&family=Mukta:wght@800&family=Roboto+Slab&family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Blog - Home</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="content">
+          <div class="wrapper">
+            <h2>Blog DevMode</h2>
+            <div class="content-container">
+              <p>
+                Ainda não tem nenhum post cadastrado, gostaria de cadastrar um
+                agora?
+              </p>
+              <button id="add-button" onclick="addButton()">
+                Adicionar Agora
+              </button>
+            </div>
+            <a href=""></a>
+            <div class="home-feed">
+              <div class="feed"></div>
+            </div>
+            <button id="one-more-post" onclick="addOtherPost()">
+              <img src="./icons/buttonAddPost.png" alt="Button for add Post" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h2 id="add-info">Adicionar Post</h2>
+            <span class="modal-close" id="modalClose">&#10006;</span>
+          </header>
+          <form id="form" class="modal-form">
+            <input
+              type="text"
+              id="title"
+              data-index="new"
+              class="modal-field"
+              placeholder="Digite aqui seu título"
+              required
+            />
+            <input
+              type="text"
+              id="name"
+              class="modal-field"
+              placeholder="Digite aqui seu nome"
+              required
+            />
+            <textarea
+              rows="12"
+              id="text"
+              class="modal-field textarea"
+              placeholder="Digite seu texto"
+              required
+            ></textarea>
+
+            <input
+              type="text"
+              id="urlimage"
+              class="modal-field"
+              placeholder="Cole aqui a URL da imagem"
+              required
+            />
+          </form>
+          <footer class="modal-footer">
+            <button id="add-post" onclick="savePost()">Adicionar Post</button>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
