@@ -23,7 +23,7 @@
   width: 100%;
 }
 .text,
-.texttitle,
+.text-title,
 .url,
 .name {
   margin-bottom: 10px;
@@ -40,7 +40,7 @@ h1 {
   font-size: 32px;
   margin-bottom: 20px;
 }
-.divbutton {
+.div-button {
   width: 100%;
   display: flex;
   justify-content: center;
